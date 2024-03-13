@@ -1,3 +1,13 @@
+'''
+    36 drones are preparing to put on a show. 
+    We are given their coordinates and velocities 
+    60 seconds before the show begins. 
+    Your job is to use the initial information 
+    to create a list of Drone objects, 
+    ‘move’ the drones for 60 iterations, 
+    then draw the drones to the screen at this point in time.
+'''
+
 from drone import Drone
 import pygame, sys, random
 from pygame.locals import QUIT
@@ -20,7 +30,7 @@ drones = []
 for line in lines:
     temp = line.strip().split()
     # TODO convert each item in 'temp' to an int
-    # create a Drone object
+    # create a Drone object (using x, y, xv, and yv)
     # add this Drone to your list of drones
 
     
