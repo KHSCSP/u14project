@@ -33,13 +33,14 @@ for line in lines:
     # create a Drone object (using x, y, xv, and yv)
     # add this Drone to your list of drones
 
+# (optional) draw each drone at its current (initial) coordinate, delay, erase the screen
     
 
 # TODO for 60 iterations move each drone
 
 
 
-# TODO draw each drone at its current coordinate
+# TODO draw each drone at its current (final) coordinate
 
 
 
