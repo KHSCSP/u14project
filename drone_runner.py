@@ -4,7 +4,7 @@
     60 seconds before the show begins. 
     Your job is to use the initial information 
     to create a list of Drone objects, 
-    ‘move’ the drones for 60 iterations, 
+    ‘move’ the drones for 60 iterations (do NOT 'bounce'),
     then draw the drones to the screen at this point in time.
 '''
 
