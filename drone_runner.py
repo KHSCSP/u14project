@@ -13,43 +13,37 @@ import pygame, sys, random
 from pygame.locals import QUIT
 
 pygame.init()
-screen = pygame.display.set_mode((800, 600))
+w = 800
+h = 600
+screen = pygame.display.set_mode((w, h))
 pygame.display.set_caption('Drone Challenge!')
 screen.fill((255,255,255))
 
+'''
+TODO
+read the data from the text file
 
-# get the initial values from the text file
-f = open("u14project/in.txt")
-lines = f.readlines()
-f.close()
+NOTE each row of the text file includes 4 numbers:
+initial x, initial y, x velocity, y velocity
 
-# NOTE each row of the text file includes 4 numbers:
-# initial x, initial y, x velocity, y velocity
+create a list of 'drone' objects
 
-drones = []
-for line in lines:
-    temp = line.strip().split()
-    # TODO convert each item in 'temp' to an int
-    # create a Drone object (using x, y, xv, and yv)
-    # add this Drone to your list of drones
-
-# (optional) draw each drone at its current (initial) coordinate, delay, erase the screen
-    
-
-# TODO for 60 iterations move each drone
+functions you'll need:
+.open(), .close(), .split(), .strip()
+'''
 
 
-
-# TODO draw each drone at its current (final) coordinate
+# TODO for 60 iterations move and draw each drone
 
 
 
 
-# stay on screen
+
+
+# -----no edits needed beyond here -----
 pygame.display.update()
 while True:
     for event in pygame.event.get():
         if event.type == QUIT:
             pygame.quit()
             sys.exit()
-    # -------- end event loop    
